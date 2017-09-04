@@ -527,7 +527,7 @@ def make_destination_manifest(
             log_name_source,
             'EVENT = File Transfer Overwrite - Destination directory already exists - Not Overwriting.'
         )
-    remove_bad_files(destination_final_path, log_name_source)
+    # remove_bad_files(destination_final_path, log_name_source)
     return files_in_manifest
 
 
@@ -600,9 +600,11 @@ def main(args_):
         destination, log_name_source,
         destination_final_path, manifest_destination
     )
+    '''
     remove_bad_files(
         source, log_name_source
     )
+    '''
     source_count, file_list = count_stuff(
         source
     )
