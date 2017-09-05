@@ -17,12 +17,7 @@ import tempfile
 import csv
 import json
 from glob import glob
-from email.mime.multipart import MIMEMultipart
-from email.mime.audio import MIMEAudio
-from email.mime.base import MIMEBase
-from email.mime.image import MIMEImage
-from email.mime.text import MIMEText
-from lxml import etree
+
 
 def diff_textfiles(source_textfile, other_textfile):
     '''
