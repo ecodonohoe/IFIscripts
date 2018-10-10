@@ -123,7 +123,7 @@ for dirpath, dirnames, filenames in os.walk(starting_dir):
         #12
         
         #13
-        print 'Generating Report....  \n'
+        
        
         if mxf_checksum == checksum:            
             append_csv(csv_report,(filename, unidecode.unidecode(series_title), unidecode.unidecode(prog_title), unidecode.unidecode(ep_num), checksum, mxf_checksum, 'CHECKSUM MATCHES!'))       
@@ -131,7 +131,7 @@ for dirpath, dirnames, filenames in os.walk(starting_dir):
             append_csv(csv_report,(filename, unidecode.unidecode(series_title), unidecode.unidecode(prog_title), unidecode.unidecode(ep_num), checksum, mxf_checksum, 'CHECKSUM DOES NOT MATCH!'))         #14
         
        
-
+print 'Generating Report....  \n'
 print "Report complete - Time elaspsed : ", datetime.now() - startTime
         
         
